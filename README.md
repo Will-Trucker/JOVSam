@@ -1,2 +1,2 @@
 # JOVSam
-Proyecto Creaj, donde se subiran los avances del proyecto
+DONDE NO HAY EXCUSA PARA LA DIVERSIÓN, Esta pagina se dedica a dar entretenimiento a las personas con un costo gratuito y con buena calidad
