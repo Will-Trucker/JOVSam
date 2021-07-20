@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img/admin.jpg);
+    -webkit-background-sizing: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Rancho', cursive;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.content .admin{
+    background: rgba(54, 53, 53, 0.7);
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 45px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+.content .admin .form-header{
+    font-weight: normal;
+    font-family: 'Rancho', cursive;
+    color: #9f807a;
+    text-align: center;
+    padding: 0px;
+}
+
+.title{
+    color: #fff;
+}
+
+.content .admin .form-label{
+    display: block;
+    color: #8d693b;
+    font-size: 25px;
+    font-family: 'Rancho', cursive;
+    position: relative;
+}
