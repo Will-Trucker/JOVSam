@@ -1,0 +1,109 @@
+body{
+    background-color: #2C3E50;
+    font-family: 'Castoro', serif;
+}
+hr{
+    border-color: #16A085;
+}
+h1{
+    color: #1BF35A;
+    text-indent: 40px;
+}
+table{
+    margin: 100px auto;
+    width: 600px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+td{
+    padding: 7px;
+    border:  1px;
+    background-color: #354b60;
+}
+header{
+    background-color: #233140;
+
+}
+img{
+    width: 225px;
+    height: 175px;
+    margin: 2px;
+}
+#opciones{
+    width: 30px; 
+    height: 30px; 
+}
+.barra{
+    width: 100%;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid ;
+    float: right;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: #16A085;
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex;
+    flex-direction: row;
+}
+
+.menu li{
+ border-right: 1px solid #241b1b;
+}
+
+.menu li:hover{
+    background: #8dd10e;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: red;
+    text-decoration: none;
+    float: right;
+}
+
+@media (max-width:10000px){
+
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #241b1b; 
+        width: 7%;
+        margin-left: -70%;
+        transition: all 0.3s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 2px solid black;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0%;
+        margin-left: 1520px;
+    }
+}

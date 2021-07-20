@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/Formulario para la crea J.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/prueba1.js"></script>
+</head>
+<body>
+    <section class="content">
+        <form action="" class="form1-2">
+            <section  class="form-header">
+                <h1 class="logo" align="center">
+                    <img src="img/JOVSAM.png" width="300px" height="100px">
+                </h1>
+                    <br>
+                <h1 class="form-title">Crea tu cuenta</h1>
+            </section>
+
+            <label for="fullname" class="form-label" >Nombre del usuario:</label>
+            <input id="fullname" class="form-input" type="text" placeholder="Digita tu nombre aqui">
+            <br>
+            <br>
+            <label for="email" class="form-label" >Correo:</label>
+            <br>
+            <input id="email" class="form-input" type="email"  placeholder="Digita tu E-mail" required>
+            <br>
+            <br>
+            <label for="contra" class="form-label">Contraseña:</label>
+            <br>
+            <input id="contra" class="form-input" type="password"  placeholder="Digita tu Contraseña con 8 caracteres"   required>
+            <br>
+            <br>
+            <label for="age" class="form-label">Edad:</label>
+            <br>
+            <input id="age" class="form-input" type="number" placeholder="Esta es tu edad" min="1" max="100" required>
+            <br>
+            <br>
+            <label for="Sex" class="form-label">Sexo</label>
+            <br>
+            <select name="sexo"  placeholder="Selecciona tu género" required>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Femenino">Otro</option>
+            </select>
+            	<br>
+            	<br>
+            <button  class="btn">
+                Enviar
+            </button>
+        </form>
+    </section> 
+</body>
+</html> 
