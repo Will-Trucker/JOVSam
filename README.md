@@ -4,7 +4,6 @@ DONDE NO HAY EXCUSA PARA LA DIVERSIÓN, Esta pagina se dedica a dar entretenimie
 
 Integrado por:
 Joshua Enrique Tejada Navarro
-Diego Fernando Ruiz Valle
 Hector Samuel Jovel Marín
 Carlos Samuel Llanes Cornejo
 William Emmanuel Mazariego
