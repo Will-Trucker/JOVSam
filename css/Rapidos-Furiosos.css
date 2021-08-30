@@ -1,0 +1,451 @@
+
+*{
+	box-sizing: border-box;
+  }
+  
+  body{
+	margin: 0;
+	font-family: 'Georama', sans-serif;
+	background: #f2efe6;
+  }
+  
+
+  
+  a{
+	text-decoration: none;
+	text-transform: uppercase;
+  }
+  /*------------------------------------------------------------------------------------inicia menu lateral------------------------------------------------------------------------*/
+  #deco{
+	min-width: 100px;
+  }
+  
+  #deco img{
+	cursor: pointer;
+  }
+  
+  #separa img{
+   width: 200px;
+   height: 100px; 
+  }
+  
+  .ini{
+	color: white;
+	text-align: center;
+  }
+  
+  .inicio{
+	text-align: center;
+	font-weight: bold;
+    font-size: 45px;
+  }
+  
+  .inicio:hover{
+	background-image: radial-gradient(#8478ac, #b170b1 60%);
+  }
+  
+  header #Primeratabla{
+	height: 70px;
+	max-height: 70px;
+	background:  #8bd0dd ;
+	width: 100%;
+	border: none;
+  }
+  
+  .inicio{
+	min-width: 200px;
+	font-size: 23px;
+  }
+  
+  #jobsam{
+	height: 40px;
+  }
+  
+  #botonmenu{
+	display: none;
+  }
+  
+  .FSN{
+	position: absolute;
+	background:  rgb(0, 0, 0, 0.9);
+	width: 100%;
+	height: 359vh;
+	top: 0;
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+  }
+  
+  #botonmenu:checked ~ .FSN{
+	opacity: 1;
+	visibility: visible;
+  }
+  
+  #agrandar{
+	width: 100%;
+  }
+  
+  .navio{
+	width: 100%;
+	max-width: 250px;
+	height: 164vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+	background:   #8bd0dd ;
+
+  }
+  
+  #botonmenu:checked ~ .FSN .navio{
+	transform: translateX(0%);
+  }
+  
+  .navio .ARV{
+	transform: translateY(15%);
+  }
+  
+  .navio .ARV  .JIE{
+	display: block;
+	padding: 30px;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+	border-spacing: 15px;
+	font-weight: bolder;
+	word-spacing: 25;
+	letter-spacing: 25;
+  }
+  
+  .navio .ARV .JIE:hover{
+	border-left: 5px solid #864b7e;
+	background:  #fad099 ;
+	color: white;
+  }
+  
+  .navio label{
+	position:absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+  }
+  
+  
+/*------------------------------------------------~Footer~-----------------------------------------------------------*/
+footer{
+	width: 100%;
+	background: #202020;
+	color: white;   
+	
+  }
+  
+  .container-footer-all{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
+  }
+  
+  .container-body{
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .colum1{
+	max-width: 400px;
+  }
+  
+  .colum1 h1{
+	font-size: 22px;
+  }
+  
+  .colum1 p{
+	font-size: 14px;
+	color: #C7C7C7;
+	margin-top: 20px;
+  }
+  
+  .colum2{
+	max-width: 400px;
+	
+  }
+  
+  .colum2 h1{
+	font-size: 22px;
+  }
+  
+  .row{
+	margin-top: 20px;
+	display: flex;
+	
+  }
+  
+  .row img{
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+  }
+  
+  .row label{
+	margin-top: 10px;
+	margin-left: 20px;
+	color: #C7C7C7;
+	cursor: pointer;
+  }
+  
+  .colum3{
+	max-width: 400px;
+  }
+  
+  .colum3 h1{
+	font-size: 22px;
+  }
+  
+  .row2{
+	margin-top: 20px;
+	display: flex;
+  }
+  
+  .row2 img{
+	width: 36px;
+	height: 36px;
+  }
+  
+  .row2 label{
+	margin-top: 10px;
+	margin-left: 20px;
+	max-width: 140px;
+  }
+  
+  .container-footer{
+	width: 100%;  
+	background: #101010;
+  }
+  
+  .footer{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;  
+	padding: 20px;
+  }
+  
+  .copyright{
+	color: #C7C7C7;
+  }
+  
+  .copyright a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+  }
+  
+  .information a{
+	text-decoration: none;
+	color: #C7C7C7;
+  }
+  
+.our{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	width: 200px;
+	height: 50px;
+    text-transform: uppercase;
+	cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.our:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+  
+  @media screen and (max-width: 1100px){
+	
+	.container-body{
+		flex-wrap: wrap;
+	}
+	
+	.colum1{
+		max-width: 100%;
+	}
+	
+	.colum2,
+	.colum3{
+		margin-top: 40px;
+	}
+  }
+
+
+/*pelis*/
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 30em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(29, 29, 29, 0.5) 100%), url(../imagenes/Rapidos-Furiosos.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin: 0 auto;
+	display: flex;
+	align-items: end;
+	width: 100%;
+
+}
+
+
+.pelicula-principal .contenedor {
+	margin: 5 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+    margin: 1.5em;
+}
+
+.pelicula-principal .descripcion{
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin: 5em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 0em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+	margin-top: 45px;
+}
+
+.pelicula-principal .boton:hover{
+	background: #fff;
+	color: rgb(0, 0, 0);
+}
+
+.pelicula-principal .boton i {
+	margin: 4em;
+}
+
+
+.descripcion{
+	text-align: justify;
+}
+
+.boton, .but{
+	margin: 4.50em;
+}
+
+#play{
+ background-color:  #1c1c1c;
+ width: 100%;
+ height: 20em;
+}
+
+.pelicula{
+	font-size: 16px;
+	min-height: 140em;
+	color: #fff;
+	background-color: #1c1c1c;
+	background-position: center center;
+	background-size: cover;
+	margin: 0 auto;
+	display: flex;
+	align-items: end;
+	width: 100%;
+
+}
+
+
+.pelicula .conten {
+	margin: 5 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula .titulo-m {
+	font-weight: 600;
+	font-size: 3.12em;
+    margin: 1.5em;
+}
+
+.pelicula .descr{
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin: 5em;
+	text-align: justify;
+}
+
+  .participantes{
+	font-size: 25px;
+	margin: 40px;
+   }
+   
+   .tablapersonajes{
+	   padding-left: 0.30%;
+	   border-collapse: separate;
+	   border-spacing: 85px;
+	   
+   }
+   
+   .tdpersonajes{
+	   text-align: center;
+	   align-items: left;
+	   justify-content: left;
+	   transition: all 500ms ease-out;
+	 
+   }
+   
+   .personas{
+	   width: 200px;
+	   height: 200px;
+	   border-radius: 50%;
+	   overflow: hidden;
+	   transition: all 500ms ease-out;
+	   margin: 0 auto;
+    
+   }
+   
+   .personas:hover{
+	   transform: scale(1.2);
+	   cursor: pointer;    
+   }
+
+   .space{
+	   background-color: #1c1c1c;
+	   width: 100%;
+	   height: 5em;
+   }
+
+   .sp{
+	   background-color: #1c1c1c;
+	   width: 100%;
+	   height: 5em;
+   }
+
+   .descarga .servidor .lugar .link{
+	   border: 3px solid blue;
+	   border-collapse: collapse;
+	   padding-left: 0.30%;
+	   border-collapse: separate;
+	   border-spacing: 85px;
+	   background-color: violet;
+	   color:white;
+   }
+
