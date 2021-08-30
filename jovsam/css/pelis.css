@@ -1,0 +1,334 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background: #f2efe6;
+}
+
+header{
+  height: 120px;
+  background-color:  #f2c397 ;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*------------------------------------------------------------------------------------inicia menu lateral------------------------------------------------------------------------*/
+#deco{
+  min-width: 100px;
+}
+
+#deco img{
+  cursor: pointer;
+}
+
+#separa img{
+ width: 200px;
+ height: 100px;
+}
+
+.ini{
+  color: white;
+  text-align: center;
+}
+
+.inicio{
+  text-align: center;
+}
+
+.inicio:hover{
+  background-image: radial-gradient(#8478ac, #bda4f5 60%);
+}
+
+header #Primeratabla{
+  height: 70px;
+  max-height: 70px;
+  background-color:  #f2c397;
+}
+
+.inicio{
+  min-width: 200px;
+  font-size: 23px;
+}
+
+#jobsam{
+  height: 40px;
+}
+
+#botonmenu{
+  display: none;
+}
+
+.FSN{
+  position: absolute;
+  background:  rgb(0, 0, 0, 0.9);
+  width: 100%;
+  height: 164vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#botonmenu:checked ~ .FSN{
+  opacity: 1;
+  visibility: visible;
+}
+
+#agrandar{
+  width: 100%;
+}
+
+.navio{
+  width: 100%;
+  max-width: 250px;
+  height: 164vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+  background:  #f2c397 ;
+}
+
+#botonmenu:checked ~ .FSN .navio{
+  transform: translateX(0%);
+}
+
+.navio .ARV{
+  transform: translateY(15%);
+}
+
+.navio .ARV  .JIE{
+  display: block;
+  padding: 30px;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  border-spacing: 15px;
+  font-weight: bolder;
+  word-spacing: 25;
+  letter-spacing: 25;
+}
+
+.navio .ARV .JIE:hover{
+  border-left: 5px solid aqua;
+  background: #864b7e;
+  color: white;
+}
+
+.navio label{
+  position:absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#botonmenu:checked ~ .peliculasrecomendadas{
+  visibility:visible;
+  display: none;
+  opacity: 0;
+  }
+  #botonmenu:checked ~ .titulo-controles{
+    visibility:hidden;
+  display: none;
+  opacity: 45px;
+  }
+  #botonmenu:checked ~ .indicadores{
+    visibility:unset;
+  display: none;
+  }
+  #botonmenu:checked ~ .contcarrusel{
+    visibility:unset;
+  display: none;
+  }
+  #botonmenu:checked ~ .contCarrusel1{
+    visibility:unset;
+  display: none;
+  }
+  #botonmenu:checked ~ .peliculas{
+    visibility:unset;
+  display: none;
+  }
+  #botonmenu:checked ~ .carouselpeliculas{
+    visibility:unset;
+    display: none;
+    }
+    
+  
+
+
+
+/*------------------------------------------------~Footer~-----------------------------------------------------------*/
+.redes{
+  height: 40px;
+  width: 40px;
+}
+footer{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #1c1c1c;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footerclass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footerclass h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footerclass p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+#footertable{
+  border-collapse: separate;
+  border-spacing: 30px;
+  background: #1c1c1c;
+}
+.footertd{
+  width: 30px;
+  height: 30px;
+  background: #1c1c1c;
+}
+.footertd:hover{
+  background-image:linear-gradient(black, purple);
+  width: 100px;
+}
+.ultimo{
+  background: #040404;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.ultimo p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.ultimo span{
+  text-transform:  uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+/*--------------------------------~Carrusel~-----------------------*/
+.peliculasrecomendadas{
+  margin-bottom: 70px;
+  width: 90%;
+
+}
+.peliculasrecomendadas .contcarrusel{
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 5%;
+
+}
+.peliculasrecomendadas .contcarrusel .Izquierda{
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+  left: 0;
+
+}
+.peliculasrecomendadas .contcarrusel .Derecha{
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+  right: 0;
+
+}
+.peliculasrecomendadas .contcarrusel .Izquierda:hover{
+  background: rgba(0, 0, 0.9);  
+  visibility: hidden;
+}
+.peliculasrecomendadas .contcarrusel .Derecha:hover{
+  background: rgba(0, 0, 0.9);
+  visibility: hidden;
+
+}
+
+ .indicadores button{
+  background: #fff;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+
+}
+ .indicadores button:hover,
+ .indicadores button.activo{
+  background: red;
+
+}
+.peliculasrecomendadas .contCarrusel1{
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  height: 400px;
+
+}
+.peliculasrecomendadas .contCarrusel1 .Carrusel{
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+.peliculasrecomendadas .contCarrusel1 .Carrusel .peliculas{
+  min-width: 35%;
+  transition: .3s ease all;
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+
+}
+.peliculasrecomendadas .contCarrusel1 .Carrusel .peliculas.hover{
+  transform: scale(1.2);
+  transform-origin: center;
+
+}
+.peliculasrecomendadas .contCarrusel1 .Carrusel .peliculas .carouselpeliculas{
+  width: 100%;
+  height: 300px;
+  vertical-align: top;
+
+}
